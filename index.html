@@ -6,12 +6,7 @@
     <title>Assignment 1 [Riaj]</title>
     <link rel="stylesheet" href="style.css" />
     <!-- font start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- font end -->
   </head>
 
@@ -36,7 +31,7 @@
     <!-- header start -->
     <header>
       <div class="header-container">
-        <div><h1 class="text">Code. Connect. Create</h1></div>
+        <div><h1 class="text">Code. <em>Connect</em>. Create</h1></div>
         <div>
           <p>
             Join 4,000+ engineers, founders, and builders at the premier
@@ -165,6 +160,44 @@
 </div>
     </section>
     <!-- Secure Your Spot end -->
+    <!-- FAQ Section start -->
+
+<section class="faq">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is DevConf 2026?
+      </button>
+      <div class="faq-answer">
+        <p>DevConf 2026 is a technology conference where developers, designers, and tech enthusiasts come together to learn and network.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Where will the event take place?
+      </button>
+      <div class="faq-answer">
+        <p>The event will be held in Dhaka, Bangladesh.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can I register?
+      </button>
+      <div class="faq-answer">
+        <p>You can register through our official website by clicking the "Register" button.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- FAQ Section end -->
     <!-- footer start -->
 <section class="footer-container">
   <!-- left -->
@@ -190,5 +223,23 @@
 
 </section>
     <!-- footer end -->
+
+    <!-- javascript start -->
+     <script>
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      const answer = q.nextElementSibling;
+
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+    <!-- javascript end -->
   </body>
 </html>
