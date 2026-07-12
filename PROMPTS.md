@@ -1,0 +1,1 @@
+This is the figma file of my project there have a somthing missing? area, i want to build a FAQ section in that area .Now you analysis the file and give me a relevant section using html and css
