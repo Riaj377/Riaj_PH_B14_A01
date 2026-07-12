@@ -209,3 +209,16 @@ span{
     color: #93C5FD;
 }
 /* Secure Your Spot end */
+/* footer start */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+}
+.footer{
+    display: flex;
+    gap: 20px;
+}
+/* footer end */
